@@ -44,15 +44,15 @@ function addContact(e){
 
     if(name.trim() !== "" && surname.trim() && phoneNumber.trim()){
         
-    const contact = new Contact(name, surname, phoneNumber);
+        const contact = new Contact(name, surname, phoneNumber);
 
-    const ui = new UI;
+        const ui = new UI;
 
-    ui.addContact(contact);
+        ui.addContact(contact);
 
-    document.getElementById('contact-name').value = " ";
-    document.getElementById('contact-surname').value = " ";
-    document.getElementById('contact-phone-number').value = " ";
+        document.getElementById('contact-name').value = " ";
+        document.getElementById('contact-surname').value = " ";
+        document.getElementById('contact-phone-number').value = " ";
     } else{
         alert('You must insert ALL value to create a new contact');
     }

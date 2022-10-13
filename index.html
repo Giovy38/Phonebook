@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebook</title>
+
+    <!-- link al css -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <!-- link a boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link ai font -->
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Pompiere&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+<h1>My Phonebook</h1>
+
+<div class="data-container">
+    <label for="contact-name">name</label>
+    <input id="contact-name" class="input-information" type="text" placeholder="insert the name here">
+    <label for="contact-surname">surname</label>
+    <input id="contact-surname" class="input-information" type="text" placeholder="insert the surname here">
+    <label for="contact-phone-number">phone number</label>
+    <input id="contact-phone-number" class="input-information" type="text" placeholder="insert the phone number here">
+
+    <input id="add-button" class="button" type="submit" value="add">
+    <input id="delete-button" class="button" type="submit" value="delete">
+</div>
+
+<div class="contact-container">
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>surname</th>
+                <th>phone number</th>
+            </tr>
+        <tbody id="my-contact-list">
+
+        </tbody >
+           
+        </thead>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- link al file js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -41,6 +41,9 @@ function addContact(e){
     const surname = document.getElementById('contact-surname').value.trim();
     const phoneNumber = document.getElementById('contact-phone-number').value.trim();
 
+
+    if(name.trim() !== "" && surname.trim() && phoneNumber.trim()){
+        
     const contact = new Contact(name, surname, phoneNumber);
 
     const ui = new UI;
@@ -50,6 +53,10 @@ function addContact(e){
     document.getElementById('contact-name').value = " ";
     document.getElementById('contact-surname').value = " ";
     document.getElementById('contact-phone-number').value = " ";
+    } else{
+        alert('You must insert ALL value to create a new contact');
+    }
+
 }
 
 // remove element
